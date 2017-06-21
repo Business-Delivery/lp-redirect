@@ -1,0 +1,15 @@
+<script>
+$( ".hiddenforre" ).hide();
+$( ".showforre" ).show();
+var searchterm = document.getElementsByTagName("title")[0].innerHTML;
+var urlsearch = "/CatalogSearch?storeId=11301&catalogId=11701&langId=-1&keyword=" + searchterm;
+$("a").prop("href", urlsearch);
+</script>
+
+<h1>Please wait...</h1>
+<p class="hiddenforre">Please make sure Javascript is enabled on your device.</p>
+<p class="hiddenforre"><a href="/">Click to go to Homepage</a></p>
+
+<script language="javascript">
+    window.location.href = urlsearch;
+</script>
